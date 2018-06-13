@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function paint() {
-    let colorsArray = ['yellow', 'black', 'green', 'purple', 'grey', 'blue', 'red', 'orange', 'cyan', 'darkGreen', 'pink', 'white'];
+    let colorsArray = ['yellow', 'black', 'green', 'purple', 'grey', 'blue', 'red', 'orange', 'cyan', 'darkGreen', 'pink', 'teal'];
     let paintColors = document.getElementById('paintcolors');
     let paintBox = document.getElementById('paintbox');
     let color;
@@ -29,13 +29,10 @@ function paint() {
         console.log("Wow-1!!!");
         let paint = event.target;
         paint.style.backgroundColor = color;
-
     })
     paintColors.addEventListener('mousedown', function (event) {
         console.log("Wow-2!!!");
         color = event.target.style.backgroundColor;
         document.getElementsByClassName('thisColor')[0].style.backgroundColor = color;
-
-
     })    
 }
